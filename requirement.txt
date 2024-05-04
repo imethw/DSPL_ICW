@@ -2,4 +2,3 @@ plotly
 streamlit>=1.18
 pandas
 pydeck
-openpyxl
