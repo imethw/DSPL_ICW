@@ -6,3 +6,4 @@ st.set_page_config(
     page_title="Global Superstore Dashboard",
     page_icon=":bar_chart:",
     layout="wide"
+)
