@@ -1,5 +1,5 @@
 import pandas as pd
-import straeamlit as st
+import streamlit as st
 import plotly.express as px
 #setting up the page confuguration
 t.set_page_config(
