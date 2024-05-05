@@ -46,7 +46,7 @@ charts_info = [
     {"type": "bar", "x": "Ship Mode", "y": "Shipping Cost", "title": "Bar Chart", "color": "#eba434"},
     {"type": "pie", "names": "Order Priority", "title": "Donut Chart", "hole": 0.5},
     {"type": "histogram", "x": "Region", "title": "Histogram"},  # Removed color parameter
-    {"type": "area", "x": "Market", "y": "Profit", "title": "Area Chart"},
+    {"type": "line", "x": "Market", "y": "Profit", "title": "Line Chart"},
     {"type": "density_heatmap", "x": "Country", "y": "Sales", "title": "Heatmap of Top 10 Countries in Sales", "color_scale": "reds"}
 ]
 for info in charts_info:
