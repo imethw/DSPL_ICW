@@ -44,7 +44,7 @@ sales_data = pd.read_excel("cleaned_dataset.xlsx", engine='openpyxl')
 charts_info = [
     {"type": "box", "x": "Sub-Category", "y": "Quantity", "title": "Box Plot", "color": "green"},
     {"type": "bar", "x": "Ship Mode", "y": "Shipping Cost", "title": "Bar Chart", "color": "#eba434"},
-    {"type": "pie", "names": "Order Priority", "title": "Donut Chart", "hole": 0.5, "color_discrete_sequence": px.colors.qualitative.Pastel1},
+    {"type": "pie", "names": "Order Priority", "title": "Donut Chart", "hole": 0.5, color_discrete_sequence=['#1f77b4', '#ff7f0e', '#2ca02c']},
     {"type": "histogram", "x": "Region", "title": "Histogram"},  # Removed color parameter
     {"type": "scatter", "x": "Market", "y": "Profit", "title": "Scatter Plot"},
     {"type": "density_heatmap", "x": "Country", "y": "Sales", "title": "Heatmap of Top 10 Countries in Sales", "color_scale": "reds"}
