@@ -39,3 +39,13 @@ st.markdown('<div class="center subheader"><h3>Analyze Your Sales Data<h3></div>
 
 # Reading the data
 sales_data = pd.read_excel("cleaned_dataset.xlsx", engine='openpyxl')
+
+# Creating charts to represent in the dashboard
+charts_info = [
+    {"type": "box", "x": "Sub-Category", "y": "Quantity", "title": "Box Plot", "color": "green"},
+    {"type": "bar", "x": "Ship Mode", "y": "Shipping Cost", "title": "Bar Chart", "color": "#eba434"},
+    {"type": "pie", "names": "Order Priority", "title": "Donut Chart", "hole": 0.5},
+    {"type": "histogram", "x": "Sales", "title": "Histogram"},  # Removed color parameter
+    {"type": "area", "x": "Market", "y": "Profit", "title": "Area Chart"},
+    {"type": "density_heatmap", "x": "Country", "y": "Sales", "title": "Heatmap of Top 10 Countries in Sales", "color_scale": "reds"}
+]
