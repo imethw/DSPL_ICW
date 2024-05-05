@@ -8,7 +8,7 @@ st.set_page_config(
     page_icon=":chart_with_upwards_trend:",
     layout="wide"
 )
-# Custom CSS to style the dashboard
+# Customized CSS to style the dashboard
 st.markdown(
     """
     <style>
@@ -30,10 +30,12 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-# Bordered container for the entire dashboard
+# Border container for the entire dashboard
 st.markdown('<div class="bordered">', unsafe_allow_html=True)
 
 # Main header and subheader
 st.markdown('<div class="center header"><h1>Global Sales Dashboard<h1></div>', unsafe_allow_html=True)
 st.markdown('<div class="center subheader"><h3>Analyze Your Sales Data<h3></div>', unsafe_allow_html=True)
 
+# Reading the data
+sales_data = pd.read_excel("cleaned_dataset.xlsx", engine='openpyxl')
