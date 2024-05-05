@@ -66,3 +66,5 @@ for info in charts_info:
     else:
         st.write("Invalid chart info: ", info)
 
+# Closing bordered container
+st.markdown("</div>", unsafe_allow_html=True)
