@@ -57,7 +57,7 @@ for info in charts_info:
             df_top_10_countries = sales_data[sales_data['Country'].isin(top_10_countries['Country'])]
             fig = getattr(px, info["type"])(df_top_10_countries, x=info.get("x", None), y=info.get("y", None), title=info.get("title", None), color_continuous_scale=info.get("color_scale", None))
         elif info["type"] == "pie":
-            fig = getattr(px, info["type"])(sales_data, names=info.get("names", None), title=info.get("title", None), hole=info.get("hole", 0.5), color_discrete_sequence: "#7ABA878")
+            fig = getattr(px, info["type"])(sales_data, names=info.get("names", None), title=info.get("title", None), hole=info.get("hole", 0.5), color_discrete_sequence=["#7ABA878"])
         elif info["type"] == "histogram":
             fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), title=info.get("title", None))
         else:
