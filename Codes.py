@@ -4,7 +4,7 @@ import plotly.express as px
 
 # Setting page configuration
 st.set_page_config(
-    page_title="Global superstore",
+    page_title="Global Superstore",
     page_icon=":chart_with_upwards_trend:",
     layout="wide"
 )
@@ -34,7 +34,7 @@ st.markdown(
 st.markdown('<div class="bordered">', unsafe_allow_html=True)
 
 # Main header and subheader
-st.markdown('<div class="center header"><h1>Global Sales Dashboard<h1></div>', unsafe_allow_html=True)
+st.markdown('<div class="center header"><h1>Global Superstore Sales Dashboard<h1></div>', unsafe_allow_html=True)
 st.markdown('<div class="center subheader"><h3>Analyze Your Sales Data<h3></div>', unsafe_allow_html=True)
 
 # Reading the data
