@@ -71,7 +71,7 @@ while index < len(charts_info):
         elif info["type"] == "box":
             fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), y=info.get("y", None), title=info.get("title", None), color_discrete_sequence=["purple"])
         else:
-            fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), y=info.get("y", None), title=info.get("title", None))
+            fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), y=info.get("y", None), title=info.get("title", None), color_discrete_sequence=["blue"])
         st.plotly_chart(fig, use_container_width=True)
     except Exception as e:
         st.error(f"Error creating {info['title']}: {e}")
