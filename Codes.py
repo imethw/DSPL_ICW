@@ -69,7 +69,7 @@ while index < len(charts_info):
         elif info["type"] == "histogram":
             fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), title=info.get("title", None), color_discrete_sequence=["yellow"])
         elif info["type"] == "box":
-            fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), y=info.get("y", None), title=info.get("title", None), color_discrete_sequence=["green"])
+            fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), y=info.get("y", None), title=info.get("title", None), color_discrete_sequence=["bright purple"])
         else:
             fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), y=info.get("y", None), title=info.get("title", None))
         st.plotly_chart(fig, use_container_width=True)
