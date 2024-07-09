@@ -67,7 +67,7 @@ while index < len(charts_info):
         elif info["type"] == "pie":
             fig = getattr(px, info["type"])(sales_data, names=info.get("names", None), title=info.get("title", None), hole=info.get("hole", 0.5))
         elif info["type"] == "histogram":
-            fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), title=info.get("title", None), color_discrete_sequence=["yellow"]))
+            fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), title=info.get("title", None), color_discrete_sequence=["yellow"])
         elif info["type"] == "box":
             fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), y=info.get("y", None), title=info.get("title", None), color_discrete_sequence=["green"])
         else:
