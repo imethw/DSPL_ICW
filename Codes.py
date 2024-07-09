@@ -72,7 +72,7 @@ while index < len(charts_info):
             fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), y=info.get("y", None), title=info.get("title", None), color_discrete_sequence=["purple"])
         elif info["type"] == "scatter":
             fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), y=info.get("y", None), title=info.get("title", None), color_discrete_sequence=["red"])
-        else:
+        else info["type"] == "bar":
             fig = getattr(px, info["type"])(sales_data, x=info.get("x", None), y=info.get("y", None), title=info.get("title", None), color_discrete_sequence=["blue"])
         st.plotly_chart(fig, use_container_width=True)
     except Exception as e:
